@@ -1,5 +1,18 @@
-<p>We have these Events:</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Events</title>
+</head>
+<body>
 
-#foreach($event in $events)
-   ${event.name}
-#end
+  <h1>We have these Events:</h1>
+
+  #foreach($event in $events)
+     <div>
+       ${event.name}, from <b>${event.group.name}</b> at <b>${event.venue.name}</b>
+     </div>
+     <br>
+  #end
+
+</body>
+</html>
