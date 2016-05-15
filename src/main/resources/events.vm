@@ -1,0 +1,5 @@
+<p>We have these Events:</p>
+
+#foreach($event in $events)
+   ${event.name}
+#end
